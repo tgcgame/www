@@ -1,0 +1,809 @@
+﻿body {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: "RecoletaMedium";
+    src: url(/fonts/RecoletaAlt-Medium.woff2);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto.woff2);
+}
+
+.first-bar {
+    background: #000 0 0 no-repeat padding-box;
+    padding: 0;
+}
+
+    .first-bar .sub {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .first-bar .sub div {
+            width: 50%;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .first-bar .sub span {
+            display: none;
+        }
+
+        .first-bar .sub .dex-div:hover {
+            background: #00a3bf;
+        }
+
+        .first-bar .sub .pan-div:hover {
+            background: #2adde4;
+        }
+
+        .first-bar .sub a {
+            color: #fff;
+        }
+
+        .first-bar .sub .pankake-img img {
+            margin-top: -.5rem;
+        }
+
+        .first-bar .sub a img {
+            margin-right: .5rem;
+        }
+
+        .first-bar .sub .dex-div:hover a {
+            color: #000;
+        }
+
+        .first-bar .sub .pan-div:hover a {
+            color: #000;
+        }
+
+.bar {
+    background: #11162a 0 0 no-repeat padding-box;
+    padding: 1rem 0;
+    margin-top: 3.6rem;
+}
+
+    .bar:after {
+        content: "";
+        position: absolute;
+        left: 23%;
+        bottom: -190%;
+        width: 55%;
+        height: 0;
+        color: #fff;
+        border: 2rem solid transparent;
+        border-top-color: #11162a;
+    }
+
+    .bar .first-div {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+        font-family: "Roboto";
+        font-weight: 500;
+    }
+
+        .bar .first-div .img-div {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .bar .first-div p {
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        .bar .first-div .img-div a, .bar .first-div .img-div a:focus {
+            color: #a34267;
+        }
+
+        /*.bar .first-div .img-div a:hover {
+                color: #beb1bf;
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }*/
+
+        /*.bar .first-div .img-div i {
+            margin-left: 1rem;
+            font-size: 2.3rem;
+        }*/
+
+        /*.bar .first-div .img-div img {
+            margin-left: 1rem;
+            width: 2.3rem;
+        }*/
+
+        .bar .first-div .img-div svg {
+            margin-left: 1rem;
+            /*width: 2.3rem;*/
+        }
+
+    .bar .drop-div {
+        display: flex;
+    }
+
+    .bar .first-div .btn {
+        color: #a34267;
+    }
+
+    .bar .first-div .buy {
+        color: #fff;
+        left: -5px;
+    }
+
+    .bar .first-div .game {
+        font-size: .8rem;
+        left: -20px !important;
+    }
+
+        .bar .first-div .game img {
+            width: 1.5rem;
+        }
+
+.buy {
+    position: relative;
+    background: #a34267;
+    color: #fff;
+    left: 6px;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn:focus, .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.buy:after, .buy:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+}
+
+.buy:before {
+    right: 100%;
+    border-right: 14px solid #a34267;
+}
+
+.buy:after {
+    left: 100%;
+    border-left: 14px solid #a34267;
+}
+
+.link-para {
+    position: fixed;
+    z-index: 1111111111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    top: 12.5rem;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+    .link-para span {
+        font-weight: 400;
+    }
+
+    .link-para img {
+        cursor: pointer;
+        margin-left: .5rem;
+        width: .8rem;
+    }
+
+.dark {
+    background: #000 0 0 no-repeat padding-box;
+    opacity: 1;
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 7.8rem;
+    font-family: "Roboto";
+}
+
+    .dark .navbar-collapse {
+        width: 34% !important;
+    }
+
+    .dark .nav-item {
+        color: #fff;
+        margin-left: 2.5rem;
+        margin-top: 1.3rem;
+    }
+
+        .dark .nav-item:hover {
+            text-decoration: none;
+        }
+
+@media (max-width: 1150px) {
+    .dark .nav-item {
+        margin-left: 1rem;
+    }
+}
+
+.dark .left .scroller, .dark .web .scroller {
+    cursor: pointer;
+}
+
+.dark .nav-item a {
+    position: relative;
+    cursor: pointer;
+    z-index: 1111111;
+    padding: 6px;
+    color: #fff;
+}
+
+    .dark .nav-item a:hover {
+        text-decoration: none;
+    }
+
+        .dark .nav-item a:hover:before {
+            border-radius: .2rem;
+            background-size: 200% 2px,2px 400%,2px 400%,55% 2px,55% 2px;
+            background-position: 50% 100%,0 100%,100% 100%,100% 0,0 0;
+            transform: scaleX(1) rotate( 0deg);
+            transition-delay: 0s,.3s,.6s;
+        }
+
+    .dark .nav-item a:before {
+        content: "";
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        top: -2px;
+        left: -2px;
+        background: linear-gradient( 90deg,#a34267 0,#a34267),linear-gradient( 0deg,#a34267 50%,transparent 0),linear-gradient( 0deg,#a34267 50%,transparent 0),linear-gradient( 90deg,#a34267 0,#a34267),linear-gradient( 270deg,#a34267 0,#a34267);
+        background-size: 100% 2px,2px 200%,2px 200%,0 2px,0 2px;
+        background-position: 50% 100%,0 0,100% 0,100% 0,0 0;
+        background-repeat: no-repeat,no-repeat;
+        transition: transform .3s ease-in-out,background-position .3s ease-in-out,background-size .3s ease-in-out;
+        transform: scaleX(0) rotate( 0deg);
+        transition-delay: .6s,.3s,0s;
+    }
+
+.dark .navbar-brand {
+    position: relative;
+    top: -27px;
+    z-index: 1;
+}
+
+    .dark .navbar-brand img {
+        width: 62%;
+    }
+
+.dark .first-item {
+    margin-left: 0;
+    mix-blend-mode: hard-light;
+}
+
+    .dark .first-item a {
+        margin-left: -4rem;
+    }
+
+        .dark .first-item a img {
+            margin-top: -8px;
+        }
+
+
+
+.dark .coming {
+    position: relative;
+    visibility: hidden;
+    background: #a34267;
+    color: #fff;
+    top: -22px;
+    right: -32px;
+    padding: 0;
+    font-size: .7rem;
+}
+
+.landing .top-div {
+    background: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-top: 11.8rem;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+}
+
+@media (min-width: 1914px) {
+    .landing .top-div {
+        background-size: 100%;
+    }
+}
+
+.landing .top-div p {
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.landing .top-div .btn {
+    margin-bottom: .8rem;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.landing .top-div span {
+    margin-top: 5rem;
+    margin-bottom: 6px;
+    letter-spacing: 4px;
+    font-family: "Roboto";
+    display: block;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.landing .top-div h1 {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.landing .top-div .heading {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.landing .top-div .description {
+    width: 35%;
+    font-size: 1rem;
+    margin: 0 auto;
+    font-family: "Roboto";
+}
+
+.landing .top-div .play-div {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+    .landing .top-div .play-div a {
+        color: #fff;
+        font-family: "Roboto";
+        font-weight: 400;
+        left: -27px;
+    }
+
+        .landing .top-div .play-div a svg {
+            color: #a34267;
+        }
+
+        .landing .top-div .play-div a span {
+            font-size: 1rem;
+            font-family: "Roboto";
+            font-weight: 400;
+            display: inline;
+        }
+
+        .landing .top-div .play-div a:hover {
+            text-decoration: none;
+        }
+
+        .landing .top-div .play-div a img {
+            margin-right: .5rem;
+        }
+
+.landing .top-div a {
+    cursor: pointer;
+}
+
+.landing .top-div .play-div .play img {
+    width: 2.5rem;
+}
+
+.landing .top-div .bottom-div {
+    width: 95%;
+    margin: 21rem auto 1rem;
+}
+
+    .landing .top-div .bottom-div .game-rating {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+        .landing .top-div .bottom-div .game-rating img {
+            width: 4rem;
+        }
+
+        .landing .top-div .bottom-div .game-rating div {
+            margin-left: 1rem;
+            text-align: left;
+        }
+
+        .landing .top-div .bottom-div .game-rating p {
+            margin-bottom: 0;
+            font-size: .8rem;
+        }
+
+        .landing .top-div .bottom-div .game-rating hr {
+            border-top: 3px solid #fff;
+            margin-top: .3rem;
+            margin-bottom: .3rem;
+        }
+
+    .landing .top-div .bottom-div .gif {
+        display: block;
+        margin: 0 auto;
+    }
+
+#Chart {
+    margin: 0 auto;
+    /*padding-top: 5vh;*/
+    padding-bottom: 5vh;
+    width: 75vw;
+    height: 82vh;
+}
+
+.landing .roadmap {
+    /*background-color: #000;*/
+    color: #fff;
+    text-align: center;
+}
+
+    .landing .roadmap .roadmap-item {
+        /* background: url(/static/media/gameMechanic.99f96929.png); */
+        /* background-repeat: no-repeat; */
+        /* background-position: 50%; */
+        /* background-size: 100% 100%; */
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+    }
+
+    .landing .roadmap h1.title {
+        margin-top: 6rem;
+        /*margin-bottom: 2rem;*/
+        font-weight: 700;
+        font-family: "RecoletaMedium";
+        font-size: 48px;
+        line-height: 65.28px;
+        color: #f1d456;
+    }
+
+    .landing .roadmap p.subtext {
+        width: 34%;
+        font-family: "RecoletaMedium";
+        color: #cecece;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+
+    .landing .roadmap .row {
+        width: 70% !important;
+        margin: 1rem auto;
+    }
+
+    .landing .roadmap .item {
+        background: url(../images/roadmap.png) 50% no-repeat;
+        background-size: 100% 100%;
+        padding: 4rem 4rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .landing .roadmap .item h3 {
+            font-weight: 400;
+            font-family: "RecoletaMedium";
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #f1d456;
+        }
+
+            .landing .roadmap .item h3.road {
+                font-weight: 600;
+                font-family: "RecoletaMedium";
+                font-style: italic;
+                font-size: 24px;
+            }
+
+        .landing .roadmap .item p {
+            font-weight: 400;
+            font-family: "RecoletaMedium";
+            flex: 0 0 240px;
+            color: #cecece;
+            text-transform: capitalize;
+        }
+
+.landing .gameBg {
+    /*background-color: #000;*/
+    text-align: center;
+    color: #fff;
+}
+
+    .landing .gameBg .box {
+        background: url(../images/contactBck.svg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        width: 70%;
+        /*margin: 10rem auto 5rem;*/
+        margin: 0 auto;
+        padding-top: 130px;
+        /*padding-top: 1px;
+        padding-bottom: 1px;*/
+        height: 600px;
+    }
+
+        .landing .gameBg .box h1 {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-family: "RecoletaMedium";
+            font-size: 48px;
+            line-height: 65.28px;
+            color: #f1d456;
+        }
+
+        .landing .gameBg .box p {
+            width: 50%;
+            margin: 0 auto 2rem;
+            font-size: 20px;
+            /*white-space: nowrap;*/ /*内容超宽后禁止换行显示(用于单行)*/
+            overflow: hidden; /*超出部分隐藏*/
+            text-overflow: ellipsis; /*文字超出部分以省略号显示*/
+            display: -webkit-box; /*必须结合的属性，将对象作为弹性伸缩盒子模型显示*/
+            -webkit-box-orient: vertical; /*必须结合的属性，设置或检索伸缩盒对象的子元素的排列方式*/
+            -webkit-line-clamp: 8; /*用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性*/
+        }
+
+.footer {
+    background: #1c2824;
+    color: #fff;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+    .footer h5 {
+        font-weight: 700;
+    }
+
+    .footer li {
+        margin-bottom: .8rem;
+    }
+
+        .footer li a {
+            color: #fff;
+        }
+
+    .footer .scroller {
+        cursor: pointer;
+    }
+
+    .footer .input-div {
+        color: #fff;
+        border: 0;
+        position: relative;
+        left: .8rem;
+    }
+
+        .footer .input-div:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-top: 18px solid transparent;
+            border-right: 14px solid rgba(255,221,207,.14);
+            border-bottom: 18px solid transparent;
+        }
+
+    .footer .form-control {
+        background: rgba(255,221,207,.14);
+        color: #fff;
+        border: 0;
+        position: relative;
+    }
+
+    .footer .btn {
+        left: .8rem;
+    }
+
+    .footer .social img {
+        margin-left: .3rem;
+        width: 2rem;
+    }
+
+    .footer .mashroom-img {
+        position: relative;
+        display: none;
+        left: 76%;
+        top: 55px;
+        width: 20%;
+        margin-top: -3rem;
+    }
+
+
+.footer-div {
+    display: flex;
+    align-items: baseline;
+    margin-top: 1rem;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+    .footer-div .footer-left a:focus, .footer-div .footer-left a {
+        color: #a34267;
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+    .footer-div .footer-rigth a {
+        margin-left: 1rem;
+        text-decoration: none;
+    }
+
+.landing .gameContent {
+    /*background-color: #000;*/
+    text-align: center;
+    font-family: "RecoletaMedium";
+    color: #fff;
+    margin-top: 4rem;
+}
+
+    .landing .gameContent .tab .btn {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 4rem;
+        background: rgba(163,66,103,.49);
+        color: rgba(255,255,255,.49);
+    }
+
+    .landing .gameContent .tab .active-btn {
+        background-color: #a34267;
+        color: #fff;
+        padding: .5rem 2rem;
+    }
+
+    .landing .gameContent .images {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+        .landing .gameContent .images .img {
+            display: none;
+        }
+
+        .landing .gameContent .images .active {
+            display: block;
+        }
+
+        .landing .gameContent .images .img .swiper-slide img {
+            width: 220px;
+        }
+
+.landing .team {
+    /*background-color: #000;*/
+    text-align: center;
+    font-family: "Roboto";
+    color: #fff;
+}
+
+    .landing .team h1 {
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-family: "RecoletaMedium";
+        font-size: 48px;
+        line-height: 65.28px;
+        color: #f1d456;
+    }
+
+    .landing .team .row {
+        width: 67%;
+        margin: 0 auto 2rem;
+    }
+
+@media(max-width: 1359px) {
+    .landing .team .row {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1360px) {
+    .landing .team .row {
+        width: 93%;
+    }
+}
+
+@media(min-width: 1720px) {
+    .landing .team .row {
+        width: 73%;
+    }
+}
+
+@media(min-width: 2000px) {
+    .landing .team .row {
+        width: 63%;
+    }
+}
+
+@media(min-width: 2400px) {
+    .landing .team .row {
+        width: 53%;
+    }
+}
+
+.landing .team .row .card-div {
+    display: flex;
+    align-items: flex-start;
+    text-align: initial;
+    width: 25rem;
+    margin: 0 auto 2rem;
+}
+
+    .landing .team .row .card-div .profile {
+        margin-right: 1rem;
+    }
+
+    .landing .team .row .card-div .heading-div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .landing .team .row .card-div .heading-div p {
+            margin-bottom: 0;
+        }
+
+    .landing .team .row .card-div .detail {
+        font-size: .7rem;
+        text-align: justify;
+    }
+
+.landing .team .row .portrait {
+    width: 20%;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.landing .team .row .introduction {
+    width: 70%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.landing .team .right {
+    flex-direction: row-reverse;
+}
+
+    .landing .team .right .portrait {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .landing .team .right .introduction {
+        text-align: right;
+    }
+
+.landing .team .row .introduction span {
+    display: block;
+}
+
+.landing .team .row .introduction p {
+    font-size: 1rem;
+}
+
+.landing .team .list-row {
+    width: 50vw;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
